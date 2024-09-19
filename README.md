@@ -5,7 +5,7 @@ this LKM creates a thread that periodically checks if the noprocname process is 
 
 Of course, I used reverse shell just for an example, you can do other things with it, like run an ELF, run commands, etc.
 
-In addition, you can come to `if (strncmp(task->comm, "noprocname", 10) == 0 && task->comm[10] == '\0') {`, and change it to another name too. (If you are going to change the name, remember that it needs to have the same number of chars, in this case procname has 10)
+In addition, you can come to `if (strncmp(task->comm, "noprocname", 10) == 0 && task->comm[10] == '\0') {`, and change it to another name too. (If you are going to change the name, remember that it needs to have the same number of chars, in this case noprocname has 10)
 
 <p align="center"><img src="image2.png"></p>
 
